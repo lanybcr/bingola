@@ -1,0 +1,199 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+.historico {
+    background-color: whitesmoke;
+    border:2px solid white;
+    border-radius: 5px;
+    width: 49vw;
+    height: 47vh;
+    float: left; 
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container {
+    height: 100%;
+    background: #eeeeee;
+    
+}
+
+div.numeroSorteado {
+    width: 49vw;
+    height: 50vh;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-size: 3vw;
+    text-align: center;
+    /*padding: 5vw 0vw 5vw 0vw;*/
+    min-width:40vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.numeroSorteado > div > button {
+    background-color: #ffffff;
+    border: 1.5px solid black;
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+div.numeroSorteado > div > button:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+div.colinha {
+    width: 49vw;
+    height: 97vh;
+    background-color: whitesmoke;
+    border:2px solid white;
+    border-radius: 5px;
+    margin-right: 0vw;
+    min-width:40vw;
+    float:right;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.linhaColinha {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.bolinha {
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    font-size: 3vh;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+	box-shadow: inset -25px -15px 40px rgba(0,0,0,.3);
+	background-image: linear-gradient(-45deg, rgba(220,220,220,.3) 0%, transparent 100%);
+    }
+
+.sorteada {
+    border: 2px solid #000000;
+    color: #ffffff;
+    background-color: #000000; 
+}
+
+#labelPedraAtual {
+    height: 10vw;
+    width: 10vw; 
+    border-radius: 50%;
+    color: #000000;
+    font-size: 25vh;
+    padding: 25px;
+    display: block;
+    font-size: 120px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+	box-shadow: inset -25px -15px 40px rgba(0,0,0,.3);
+	background-image: linear-gradient(-45deg, rgba(220,220,220,.3) 0%, transparent 100%);
+}
+
+.containerPedraAtual {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    padding: 5px;
+}
+
+.animacaoComemoracao {
+    height: 100vh;
+    width: 100vw;
+    float: left;
+    position: absolute;
+}
+
+.animacaoComemoracao >  button {
+    background-color: #ffffff;
+    border: 1.5px solid black;
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+.animacaoComemoracao > button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+  }
+
+div.animacaoComemoracao > .fundo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #cccccc;
+    opacity: 0.2;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+

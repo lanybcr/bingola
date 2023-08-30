@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BINGO</title>
+<script type="text/javascript" src="main.js"> </script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+    <div id="comemoracao" class="animacaoComemoracao">
+        <lottie-player style="height: 90vh; width: 90vw;"
+        src="https://assets2.lottiefiles.com/packages/lf20_obhph3sh.json"  
+        background="transparent"  speed="1" loop autoplay></lottie-player>
+        <button onclick="Limpar()">Novo Jogo</button>
+        <div class="fundo"></div>
+    </div>
+    <div class="numeroSorteado">
+        <div>
+            <button onclick="Bingo()">Bingo</button>
+        </div>  
+        <div class="containerPedraAtual">
+            <span id="labelPedraAtual" onclick="SimularRoleta()"></span> 
+            <lottie-player id="animacaoRoleta" style="height: 30vh; width: 30vw; display: none;"
+            src="https://assets9.lottiefiles.com/packages/lf20_rr9opzkm.json"
+            background="transparent"  speed="4" loop ></lottie-player> 
+        </div>
+    </div>
+    
+    <div id="colinha" class="colinha"> 
+    </div>
+    
+    <div class="historico"> 
+        <p id="textoHistorico">
+        </p>   
+    </div>
+</div>
+</body>
+</html>
